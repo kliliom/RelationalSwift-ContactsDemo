@@ -40,12 +40,15 @@ final class DefaultContactRepository: ContactRepository {
     }
 
     func getAll() throws -> [Contact] {
-        try database.from(Contact.table).select()
+        try database.from(Contact.self)
+            .select()
     }
 
     func get(byID: UUID) throws -> Contact {
-        let contacts = try database.from(Contact.table)
-            .where { $0.id == byID }.select()
+        let contacts = try database.from(Contact.self)
+            .where { $0.id == byID }
+            .select()
+
         guard let contact = contacts.first else {
             throw AppError.contactNotFound
         }

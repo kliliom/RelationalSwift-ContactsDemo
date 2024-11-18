@@ -30,8 +30,9 @@ final class DefaultContactPropertyRepository: ContactPropertyRepository {
     }
 
     func getAll(for contact: Contact) throws -> [ContactProperty] {
-        try database.from(ContactProperty.table)
-            .where { $0.contactID == contact.id }.select()
+        try database.from(ContactProperty.self)
+            .where { $0.contactID == contact.id }
+            .select()
     }
 
     func insert(_ property: ContactProperty) throws {
