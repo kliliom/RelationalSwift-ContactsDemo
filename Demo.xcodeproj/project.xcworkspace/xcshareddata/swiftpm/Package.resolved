@@ -6,8 +6,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/kliliom/RelationalSwift.git",
       "state" : {
-        "revision" : "b79dc8c00d1d2cc42d2cd4c1fdb72ade710bf8c7",
-        "version" : "0.3.1"
+        "revision" : "bb5517f4c6bd7dd82f684e084b252d2c106cd6eb",
+        "version" : "0.4.0"
       }
     },
     {

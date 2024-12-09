@@ -345,7 +345,7 @@
 			repositoryURL = "https://github.com/kliliom/RelationalSwift.git";
 			requirement = {
 				kind = exactVersion;
-				version = 0.3.1;
+				version = 0.4.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
